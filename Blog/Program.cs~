@@ -59,7 +59,7 @@ namespace Blog
             
  
             var repository = new Repository<Role>(connection);
-            var items = repository.Get();
+            var items = repository.GetWithRoles();
 
             foreach (var item in items)
                 Console.WriteLine(item.Name);
@@ -80,7 +80,7 @@ namespace Blog
         public static void ReadUsersWithRoles(SqlConnection connection)
         {
             var repository = new UserR(connection);
-            var items = repository.GetWithRoles();
+            var items = repository.Get();
 
             foreach (var item in items)
             {

@@ -13,4 +13,9 @@
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Repositories\RoleRepository.cs" />
+    <Compile Remove="Repositories\UserRepository.cs" />
+  </ItemGroup>
+
 </Project>
